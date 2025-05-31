@@ -12,6 +12,9 @@ A desktop application built with Electron to help protect your eyes from strain 
 - **Auto-start on Boot**: Option to automatically start the app when your computer boots
 - **Cross-platform Support**: Works on Windows, macOS, and Linux
 
+# 📸 Screenshot
+<img width="659" alt="fdsfdsds" src="https://github.com/user-attachments/assets/75de5a32-a47c-417a-b567-b9c4fb8320f2" />
+
 ## 📥 Installation
 
 ### Download Pre-built Binaries
@@ -41,10 +44,11 @@ npm run build
 # Create distribution packages
 npm run dist
 
-# create full exe file for distribute
+# create a full exe file for distribution
 npm run build-win-installer
 
-# create full exe file for distribute
+# create a full exe file for distribution<img width="659" alt="fdsfdsds" src="https://github.com/user-attachments/assets/05901f18-be49-448b-837a-f06c59519947" />
+
 npm run build-win-portable
 ```
 
