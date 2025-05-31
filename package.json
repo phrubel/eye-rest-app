@@ -1,0 +1,65 @@
+{
+  "name": "eye-rest-reminder",
+  "version": "1.0.0",
+  "description": "A simple eye rest reminder application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-win-installer": "electron-builder --win nsis",
+    "build-win-portable": "electron-builder --win portable",
+    "dist": "electron-builder --publish=never"
+  },
+  "keywords": [
+    "eye-rest",
+    "health",
+    "productivity",
+    "electron"
+  ],
+  "author": "Parvez Hasan Rubel",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.3.11",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.parvez.eyerestreminder",
+    "productName": "Eye Rest Reminder",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "styles.css",
+      "renderer.js",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Eye Rest Reminder"
+    }
+  }
+}
